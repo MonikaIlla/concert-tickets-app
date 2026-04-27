@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>🎵 Concert Tickets - Rock Festival 2025</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🎸 ROCK FESTIVAL 2025 🎸</h1>
+            <p class="tagline">The biggest concert of the year!</p>
+        </header>
+
+        <div class="ticket-card">
+            <h2>Concert Details</h2>
+            <div class="details">
+                <p><strong>📅 Date:</strong> Saturday, December 20, 2025</p>
+                <p><strong>📍 Venue:</strong> Grand Arena, Music City</p>
+                <p><strong>⏰ Time:</strong> 7:00 PM - 11:00 PM</p>
+                <p><strong>🎤 Artists:</strong> The Rockers, Electric Storm, Thunder Beat</p>
+            </div>
+
+            <div class="ticket-selection">
+                <label for="ticketType">Select Ticket Type:</label>
+                <select id="ticketType">
+                    <option value="50">General Admission - $50</option>
+                    <option value="100">VIP Pass - $100</option>
+                    <option value="200">Platinum Suite - $200</option>
+                </select>
+
+                <label for="quantity">Quantity:</label>
+                <input type="number" id="quantity" min="1" max="10" value="1">
+
+                <button id="buyBtn">🎟️ Buy Tickets</button>
+            </div>
+
+            <div id="totalDisplay" class="total-display"></div>
+        </div>
+
+        <div class="ticket-list">
+            <h3>📋 Your Tickets</h3>
+            <ul id="ticketList"></ul>
+        </div>
+
+        <footer>
+            <p>© 2025 Concert Tickets App | All rights reserved</p>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
